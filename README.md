@@ -18,3 +18,21 @@ public static double Rad(double degree){
 ```
 <h3>Findings X & Y coordinates using trigonometry</h4>
 <img src="https://cdn.kastatic.org/googleusercontent/TSZaYHIv-JZrb7IgquFrsO1b4Ie104YD3TkNCaZQ06I8RsonAVD_ON5L8t6q9DIQspl6s1yEwUTmrd1E2PFm87oCuQ">
+
+* Finding X Coordinate
+
+```java
+ public static double Xcord(double degree){
+     double Xcord = Math.cos(Rad(degree))*150;
+     return Xcord;
+ }
+```
+
+* Finding Y Coordinate
+
+```java
+ public static double Ycord(double degree){
+     double Ycord = Math.sin(Rad(degree))*150;
+     return Ycord;
+ }
+```
