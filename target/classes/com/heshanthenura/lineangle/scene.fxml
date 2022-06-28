@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.heshanthenura.lineangle.Controller">
+   <children>
+      <VBox layoutX="188.0" layoutY="145.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="450.0" prefWidth="400.0">
+               <children>
+                  <Line fx:id="MinorLine" endX="141.0" endY="-68.0" fill="BLACK" layoutX="200.0" layoutY="225.0" />
+                  <Line fx:id="MajorLine" endX="150.0" fill="RED" layoutX="200.0" layoutY="225.0" stroke="RED" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" VBox.vgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER" layoutX="63.0" layoutY="26.0" spacing="4.0">
+                     <children>
+                        <Text fx:id="deglable" strokeType="OUTSIDE" strokeWidth="0.0" text="0 deg" textAlignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <HBox alignment="CENTER" spacing="7.0">
+                           <children>
+                              <Label text="-360" />
+                              <Slider fx:id="degslider" blockIncrement="1.0" max="360.0" min="-360.0" prefHeight="14.0" prefWidth="215.0" />
+                              <Label layoutX="10.0" layoutY="10.0" text="360" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="test" layoutX="174.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#test" text="Button" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
