@@ -16,3 +16,5 @@ public static double Rad(double degree){
      return rad;
  }
 ```
+<h4>Findings X & Y coordinates using trigonometry</h4>
+<img src="https://cdn.kastatic.org/googleusercontent/TSZaYHIv-JZrb7IgquFrsO1b4Ie104YD3TkNCaZQ06I8RsonAVD_ON5L8t6q9DIQspl6s1yEwUTmrd1E2PFm87oCuQ">
